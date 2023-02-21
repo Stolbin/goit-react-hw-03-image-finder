@@ -6,6 +6,9 @@ class App extends Component {
   render() {
     return (
       <Conteiner>
+        {/* <ImageGallery/>
+                    </Searchbar>
+                  <Conteiner> */}
         <Text>React homework template</Text>
       </Conteiner>
     );
