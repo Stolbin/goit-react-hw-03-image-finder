@@ -6,10 +6,3 @@ export const Conteiner = styled.div`
   justify-content: center;
   align-items: center;
 `;
-
-export const Text = styled.p`
-  font-size: 30px;
-  font-weight: 600;
-  color: black;
-  text-shadow: 1px 1px 2px #a9a9a9;
-`;

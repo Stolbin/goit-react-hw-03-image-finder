@@ -1,23 +1,42 @@
-// import PropTypes from 'prop-types';
+import { Component } from 'react';
+import { SlMagnifier } from 'react-icons/sl';
 
-const Searchbar = () => {
-  return (
-    <header>
-      <form>
-        <button type="submit" class="button">
-          <span>Search</span>
-        </button>
+import {
+  FormSearchbar,
+  BtnSearchbar,
+  InputSearchbar,
+} from './Searchbar.styled';
 
-        <input
-          class="input"
+class Searchbar extends Component {
+  state = { query: '' };
+
+  handleChange = event => {
+    const { value } = event.currentTarget;
+    this.setState({ query: value });
+  };
+
+  handleSubmit = event => {
+    const { query } = this.state;
+    event.preventDefault();
+    this.props.onSubmit(query);
+    event.currentTarget.reset();
+  };
+  render() {
+    return (
+      <FormSearchbar onSubmit={this.handleSubmit}>
+        <BtnSearchbar type="submit">
+          <SlMagnifier style={{ width: 25, height: 25 }} />
+        </BtnSearchbar>
+        <InputSearchbar
           type="text"
-          autocomplete="off"
-          autofocus
+          autoComplete="off"
+          onChange={this.handleChange}
+          autoFocus
           placeholder="Search images and photos"
         />
-      </form>
-    </header>
-  );
-};
+      </FormSearchbar>
+    );
+  }
+}
 
 export default Searchbar;
