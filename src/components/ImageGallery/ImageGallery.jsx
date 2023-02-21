@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
-import { ConteinerImgGallery, ImgGalleryItem } from './ImageGallery.styled';
+import ImageGalleryItem from 'components/ImageGalleryItem';
+import { ConteinerImgGallery } from './ImageGallery.styled';
 
 const ImageGallery = ({ images }) => (
   <ConteinerImgGallery>
     {images.map(({ id, webformatURL, tags, largeImageURL }) => (
-      <ImgGalleryItem
+      <ImageGalleryItem
         key={id}
         webformatURL={webformatURL}
         largeImageURL={largeImageURL}

@@ -21,7 +21,7 @@ class App extends Component {
     isError: null,
     showModal: false,
   };
-  async componentDidUpdate(prevState) {
+  async componentDidUpdate(_, prevState) {
     const { query, page } = this.state;
     if (query !== prevState.query || page !== prevState.page) {
       try {
