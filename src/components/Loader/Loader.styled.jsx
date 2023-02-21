@@ -1,10 +1,9 @@
 import styled from '@emotion/styled';
 
 export const LoaderContainer = styled.div`
-  /* margin:auto; */
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.7;
+  opacity: 0.9;
 `;

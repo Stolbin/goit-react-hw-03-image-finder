@@ -58,13 +58,13 @@ class App extends Component {
         <Searchbar onSubmit={this.handleFormSubmit} />
         <ImageGallery images={images} />
         {isLoading && <Loader />}
-        {showBtn && <Button onClick={this.onLoadMore} />}
-        {isEmpty && (
-          <h2>
-            There are no pictures with the name {query} in our database, try
-            another request!
-          </h2>
-        )}
+        {(showBtn && <Button onClick={this.onLoadMore} />) ||
+          (isEmpty && (
+            <h2>
+              There are no pictures with the name {query} in our database, try
+              another request!
+            </h2>
+          ))}
         {isError && <h2>{isError}</h2>}
       </Conteiner>
     );

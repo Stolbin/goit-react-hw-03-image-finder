@@ -29,7 +29,7 @@ var getImages = function getImages(query, page) {
             params: {
               q: query,
               page: page,
-              per_page: 12
+              per_page: 15
             }
           }));
 

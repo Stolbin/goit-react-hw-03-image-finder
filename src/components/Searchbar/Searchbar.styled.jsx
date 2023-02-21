@@ -8,28 +8,33 @@ export const FormSearchbar = styled.form`
   justify-content: center;
   align-content: center;
   width: 100%;
-  background-color: #ffd700;
+  background-color: #ffa500;
   overflow: hidden;
+  box-shadow: 1px 2px 3px #000000;
+`;
+export const BoxInptu = styled.div`
+  display: flex;
+  width: 20%;
+  height: 50px;
+  box-shadow: 1px 2px 3px #000000;
 `;
 export const BtnSearchbar = styled.button`
-  display: inline-block;
   width: 50px;
-  height: 52px;
+  height: 50px;
   opacity: 0.6;
   cursor: pointer;
   border: none;
   outline: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.25s linear;
   &:hover {
     opacity: 1;
-    transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.25s linear;
   }
 `;
 export const InputSearchbar = styled.input`
-  display: inline-block;
-  width: 20%;
+  width: 100%;
   height: 50px;
   font: inherit;
   font-size: 18px;

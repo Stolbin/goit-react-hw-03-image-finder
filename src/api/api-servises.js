@@ -12,7 +12,7 @@ export const getImages = async (query, page) => {
     params: {
       q: query,
       page: page,
-      per_page: 12,
+      per_page: 15,
     },
   });
   return data;

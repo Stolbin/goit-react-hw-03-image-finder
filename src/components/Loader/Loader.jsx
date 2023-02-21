@@ -1,10 +1,23 @@
-import { Audio } from 'react-loader-spinner';
+import { ThreeCircles } from 'react-loader-spinner';
 import { LoaderContainer } from './Loader.styled';
 
-const Loader = () => (
-  <LoaderContainer>
-    <Audio />
-  </LoaderContainer>
-);
+function Loader() {
+  return (
+    <LoaderContainer>
+      <ThreeCircles
+        height="150"
+        width="150"
+        color="#ffa500"
+        wrapperStyle={{}}
+        wrapperClass=""
+        visible={true}
+        ariaLabel="three-circles-rotating"
+        outerCircleColor=""
+        innerCircleColor=""
+        middleCircleColor=""
+      />
+    </LoaderContainer>
+  );
+}
 
 export default Loader;

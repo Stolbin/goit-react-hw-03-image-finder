@@ -5,6 +5,7 @@ import {
   FormSearchbar,
   BtnSearchbar,
   InputSearchbar,
+  BoxInptu,
 } from './Searchbar.styled';
 
 class Searchbar extends Component {
@@ -24,16 +25,18 @@ class Searchbar extends Component {
   render() {
     return (
       <FormSearchbar onSubmit={this.handleSubmit}>
-        <BtnSearchbar type="submit">
-          <SlMagnifier style={{ width: 25, height: 25 }} />
-        </BtnSearchbar>
-        <InputSearchbar
-          type="text"
-          autoComplete="off"
-          onChange={this.handleChange}
-          autoFocus
-          placeholder="Search images and photos"
-        />
+        <BoxInptu>
+          <BtnSearchbar type="submit">
+            <SlMagnifier style={{ width: 25, height: 25 }} />
+          </BtnSearchbar>
+          <InputSearchbar
+            type="text"
+            autoComplete="off"
+            onChange={this.handleChange}
+            // autoFocus
+            placeholder="Search images and photos"
+          />
+        </BoxInptu>
       </FormSearchbar>
     );
   }
