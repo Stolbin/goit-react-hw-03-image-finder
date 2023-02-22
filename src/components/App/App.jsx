@@ -19,7 +19,6 @@ class App extends Component {
     showBtn: false,
     isLoading: false,
     isError: null,
-    showModal: false,
   };
   async componentDidUpdate(_, prevState) {
     const { query, page } = this.state;
