@@ -18,7 +18,7 @@ class ImageGalleryItem extends Component {
         <ItemContainer key={id} onClick={this.showModalWindow}>
           <ImageGallery src={webformatURL} alt={tags} />
         </ItemContainer>
-        {this.state.showModal && (
+        {showModal && (
           <Modal onClose={this.hideModalWindow}>
             <img src={largeImageURL} alt={tags} />
           </Modal>
