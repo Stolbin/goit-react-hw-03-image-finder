@@ -1,11 +1,10 @@
 import { Component } from 'react';
 import { SlMagnifier } from 'react-icons/sl';
-
 import {
   FormSearchbar,
   BtnSearchbar,
   InputSearchbar,
-  BoxInptu,
+  SearchbarConteiner,
 } from './Searchbar.styled';
 
 class Searchbar extends Component {
@@ -24,8 +23,8 @@ class Searchbar extends Component {
   };
   render() {
     return (
-      <FormSearchbar onSubmit={this.handleSubmit}>
-        <BoxInptu>
+      <SearchbarConteiner>
+        <FormSearchbar onSubmit={this.handleSubmit}>
           <BtnSearchbar type="submit">
             <SlMagnifier style={{ width: 25, height: 25 }} />
           </BtnSearchbar>
@@ -36,8 +35,8 @@ class Searchbar extends Component {
             // autoFocus
             placeholder="Search images and photos"
           />
-        </BoxInptu>
-      </FormSearchbar>
+        </FormSearchbar>
+      </SearchbarConteiner>
     );
   }
 }

@@ -4,7 +4,7 @@ import Searchbar from 'components/Searchbar';
 import ImageGallery from 'components/ImageGallery';
 import { Button } from 'components/Button/Button';
 import Loader from 'components/Loader';
-import { Conteiner } from './App.styled';
+import { Conteiner, ErrorText, SpanText } from './App.styled';
 
 const errorMessages = {
   noImages: 'Whoops, something went wrong! Please try again later!',
@@ -60,10 +60,10 @@ class App extends Component {
         {isLoading && <Loader />}
         {(showBtn && <Button onClick={this.onLoadMore} />) ||
           (isEmpty && (
-            <h2>
-              There are no pictures with the name {query} in our database, try
-              another request!
-            </h2>
+            <ErrorText>
+              There are no pictures with the name <SpanText>{query} </SpanText>
+              in our database, try another request!
+            </ErrorText>
           ))}
         {isError && <h2>{isError}</h2>}
       </Conteiner>

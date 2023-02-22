@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 
 export const ItemContainer = styled.li``;
 export const ImageGallery = styled.img`
-  width: 300px;
-  height: 200px;
+  width: 330px;
+  height: 220px;
   border-radius: 4px;
   object-fit: cover;
   box-shadow: 2px 2px 4px #000000;

@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import Modal from 'components/Modal';
 import { ItemContainer, ImageGallery } from './ImageGalleryItem.styled';
 

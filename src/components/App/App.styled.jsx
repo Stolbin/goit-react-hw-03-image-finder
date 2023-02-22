@@ -1,11 +1,16 @@
 import styled from '@emotion/styled';
 
 export const Conteiner = styled.div`
-  padding: 0px 80px 80px 80xp;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fffafa;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  padding-bottom: 24px;
+`;
+export const ErrorText = styled.h2`
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+`;
+export const SpanText = styled.span`
+  color: #2f4f4f;
 `;
