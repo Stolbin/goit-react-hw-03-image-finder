@@ -3,7 +3,7 @@ import { getImages } from 'api/api-servises';
 import Searchbar from 'components/Searchbar';
 import ImageGallery from 'components/ImageGallery';
 import { Button } from 'components/Button/Button';
-import Loader from 'components/Loader';
+import Loader from 'components/Loader/Loader';
 import { Conteiner, ErrorText, SpanText } from './App.styled';
 
 const errorMessages = {
