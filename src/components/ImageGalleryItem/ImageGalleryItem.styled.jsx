@@ -11,6 +11,6 @@ export const ImageGallery = styled.img`
   &:hover {
     scale: 1.02;
     box-shadow: 0px 0px 8px #000000;
-    transition: scale 0.25s linear, box-shadow 0.25s linear;
+    transition: scale 0.4s linear, box-shadow 0.25s linear;
   }
 `;
