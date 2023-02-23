@@ -48,12 +48,15 @@ export const BtnSearchbar = styled.button`
 export const InputSearchbar = styled.input`
   display: inline-block;
   width: 100%;
+  font-family: 'Segoe UI';
   font: inherit;
   font-size: 18px;
+  font-weight: 600;
   border: none;
   outline: none;
   padding: 0px 10px;
   &::placeholder {
+    font-family: 'Segoe UI';
     font-size: 16px;
     color: #778899;
   }

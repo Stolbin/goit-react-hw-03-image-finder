@@ -30,6 +30,7 @@ class App extends Component {
         console.log(hits);
         if (!hits?.length) {
           this.setState({ isEmpty: true });
+          this.setState({ showBtn: false });
           return;
         }
         this.setState(prevState => ({
