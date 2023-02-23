@@ -52,6 +52,9 @@ class App extends Component {
   onLoadMore = () => {
     this.setState(prevState => ({ page: prevState.page + 1 }));
   };
+  componentWillUnmount() {
+    this.setState(() => ({ state: { query: '' } }));
+  }
   render() {
     const { images, isEmpty, query, showBtn, isError, isLoading } = this.state;
     return (

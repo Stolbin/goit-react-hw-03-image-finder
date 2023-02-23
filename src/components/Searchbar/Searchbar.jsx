@@ -18,9 +18,12 @@ class Searchbar extends Component {
   handleSubmit = e => {
     const { query } = this.state;
     e.preventDefault();
+    if (!query.trim()) return;
     this.props.onSubmit(query);
     e.currentTarget.reset();
+    this.setState({ query: '' });
   };
+
   render() {
     return (
       <SearchbarConteiner>
