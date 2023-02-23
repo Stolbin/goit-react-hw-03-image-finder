@@ -13,4 +13,10 @@ export const Btn = styled.button`
   margin-right: auto;
   border: none;
   box-shadow: 1px 2px 3px #000000;
+  transition: background 0.45s linear;
+  &:hover,
+  :focus {
+    background: #f4a460;
+    transition: background 0.45s linear;
+  }
 `;
