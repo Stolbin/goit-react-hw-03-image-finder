@@ -14,11 +14,6 @@ class App extends Component {
   state = {
     query: '',
     images: [],
-    page: 1,
-    isEmpty: false,
-    showBtn: false,
-    isLoading: false,
-    isError: null,
     showModal: false,
   };
   async componentDidUpdate(_, prevState) {
@@ -30,7 +25,6 @@ class App extends Component {
         console.log(hits);
         if (!hits?.length) {
           this.setState({ isEmpty: true });
-          this.setState({ showBtn: false });
           return;
         }
         this.setState(prevState => ({
@@ -46,15 +40,21 @@ class App extends Component {
   }
 
   handleFormSubmit = query => {
-    this.setState({ query, page: 1, images: [] });
+    this.setState({
+      query,
+      images: [],
+      page: 1,
+      isEmpty: false,
+      showBtn: false,
+      isLoading: false,
+      isError: null,
+    });
   };
 
   onLoadMore = () => {
     this.setState(prevState => ({ page: prevState.page + 1 }));
   };
-  componentWillUnmount() {
-    this.setState(() => ({ state: { query: '' } }));
-  }
+
   render() {
     const { images, isEmpty, query, showBtn, isError, isLoading } = this.state;
     return (
