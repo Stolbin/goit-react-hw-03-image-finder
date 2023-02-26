@@ -16,6 +16,7 @@ class App extends Component {
     images: [],
     showModal: false,
   };
+
   async componentDidUpdate(_, prevState) {
     const { query, page } = this.state;
     if (query !== prevState.query || page !== prevState.page) {
