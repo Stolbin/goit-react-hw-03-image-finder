@@ -1,10 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Btn = styled.button`
-  padding: 8px 10px;
+  padding: 8px 20px 10px 20px;
   font-family: 'Segoe UI';
-  width: 130px;
-  height: 42px;
   font-size: 20px;
   font-weight: 600;
   border-radius: 5px;
