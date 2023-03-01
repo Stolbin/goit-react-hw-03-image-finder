@@ -10,6 +10,7 @@ export const Btn = styled.button`
   margin-left: auto;
   margin-right: auto;
   border: none;
+  color: black;
   box-shadow: 1px 2px 3px #000000;
   transition: background 0.45s linear;
   @media (min-width: 768px) {
