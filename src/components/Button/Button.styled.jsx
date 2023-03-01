@@ -12,6 +12,7 @@ export const Btn = styled.button`
   border: none;
   box-shadow: 1px 2px 3px #000000;
   transition: background 0.45s linear;
+  -webkit-tap-highlight-color: transparent;
   @media (min-width: 768px) {
     padding: 6px 16px 7px 16px;
     font-size: 18px;
