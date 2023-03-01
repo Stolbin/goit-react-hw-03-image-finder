@@ -47,7 +47,6 @@ export const BtnSearchbar = styled.button`
   cursor: pointer;
   outline: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-tap-highlight-color: transparent;
   &:hover {
     scale: 1.02;
     opacity: 1;
