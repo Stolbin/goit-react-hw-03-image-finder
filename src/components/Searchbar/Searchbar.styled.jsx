@@ -64,6 +64,7 @@ export const InputSearchbar = styled.input`
   border: none;
   outline: none;
   padding: 0px 10px;
+  caret-color: black;
   &::placeholder {
     font-family: 'Segoe UI';
     font-size: 16px;
