@@ -40,12 +40,13 @@ export const BtnSearchbar = styled.button`
   height: 100%;
   border: none;
   color: #708090;
+  background: #dcdcdc;
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.6;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     scale: 1.02;
